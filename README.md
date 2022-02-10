@@ -8,6 +8,6 @@
 
 **Approach** - All these Problems can be bundled in a Container.
 
-**Solution/Docker **- A tool to make it easier to build, deploy & run Apps using Containers.
+**Solution/Docker** - A tool to make it easier to build, deploy & run Apps using Containers.
 
-**Docker Engine **- holds all Containers.
+**Docker Engine** - holds all Containers.
