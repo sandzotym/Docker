@@ -1,5 +1,7 @@
 # Docker
 
+![image](https://user-images.githubusercontent.com/93154062/153587645-4a2280de-e21c-4f41-87b4-91e38529c712.png)
+
 **Problem Statements** -
 - Apps working in one machine but not on another.
 - Dependency ver. mismatches like Spring versions.
