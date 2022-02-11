@@ -42,6 +42,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 			<!-- Using Maven Plugin -->
+			<!-- TODO : facing MojoExecutionException/Docker Exception while building Image with Maven Plugin in MAC -->
 			<plugin>
 				<groupId>com.spotify</groupId>
 				<artifactId>dockerfile-maven-plugin</artifactId>
