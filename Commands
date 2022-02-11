@@ -1,1 +1,7 @@
 $docker -v
+$docker build -t <JarName>
+$docker image ls
+
+$docker run -p 9090:8080 <JarName/ImageName> 
+//9090 is Container
+//the App can be accessed both with 9090 & 8080 ports now. Use https://<IP>/xxx
