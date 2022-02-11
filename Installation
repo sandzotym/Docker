@@ -1,0 +1,11 @@
+Prerequisties - OS 64bit & Enable Hyper-V
+In Windows it installs Oracle VM, Kinetic (UI) & Command Terminal
+
+>> General Issues with Initial Installation :
+
+1 - In start.sh replace & refactor creation of vm for Enabling Hyper-V 
+    i.e. Change "${DOCKER_MACHINE}" create -d virtualbox $PROXY_ENV "${VM}" to "${DOCKER_MACHINE}" create -d virtualbox --virtualbox-no-vtx-check $PROXY_ENV "${VM}"
+    
+2 - IP finding Issue 
+    Goto Windows defender Firewall with Advance Security -> Inbound Rules -> Add New -> Custom -> Add your IP -> give Range from 0 to 100 -> Public Only -> Give 
+    Name = DockerIP 
