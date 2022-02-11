@@ -5,3 +5,10 @@ $docker image ls
 $docker run -p 9090:8080 <JarName/ImageName> 
 //9090 is Container
 //the App can be accessed both with 9090 & 8080 ports now. Use https://<IP>/xxx
+
+//Using DockerHub
+$docker login
+$docker tag <ImageName> <DockerID>/<ImageName>
+$docker push <DockerID>/<ImageName>
+$docker pull <DockerID>/<ImageName>
+$docker run -p 9090:8080 <DockerID>/<ImageName>
