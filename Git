@@ -1,0 +1,11 @@
+Create a WS and Connect to GIT
+-------------------------------
+
+Create a Project in IDE & Create a corresponding empty Repo in GIT
+Go to IDE Terminal & Execute -
+  - git init
+  - git status                              // list the files to Commit
+  - git add .                               // All files
+  - git commit -m "<Comment>"
+  - git remote add origin <URL of Repo.git> // Synch with GIT
+  - git push -u origin master               // Push into Repo, master is the new branch
