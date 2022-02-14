@@ -9,3 +9,5 @@ Go to IDE Terminal & Execute -
   - git commit -m "<Comment>"
   - git remote add origin <URL of Repo.git> // Synch with GIT
   - git push -u origin master               // Push into Repo, master is the new branch
+  
+ CTRL + K                                   // Commit All in IntelliJ
