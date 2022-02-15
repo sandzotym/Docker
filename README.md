@@ -59,5 +59,6 @@ All of these consume resources. Where Github provides same platform to reduce th
 
 ![image](https://user-images.githubusercontent.com/93154062/154079663-19e6fb24-e401-4be8-b950-ba6d734c7ad6.png)
 
+Go to Repo - Actions - Java with Maven - Update the Maven YML Generated [Refer to the Master Branch] (Google Actions provided and use accordingly) - Commit to new Branch & Pull/Merge to see the executions in the Actions Tab
 
-
+Use Repo - Settings - Secret; to Store Credentials
