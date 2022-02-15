@@ -23,6 +23,7 @@ docker run -it -p 8080:8080 <dockerID>/<imageName>
 //if any changes are made, we can also go in IDE - Maven - Plugin - jib - jib:build (Right Click & Run Maven Build)
 
 //Dockerize Springboot & MongoDB
+------------------------
 docker pull mongo:latest
 docker images
 docker ps //shows Containers
@@ -30,6 +31,11 @@ docker run -d -p 27017:27017 --name <containerName> <imageName i.e. mongo:latest
 //after Maven Install once the JAR is built execute
 docker build -t <imageName>:1.0 .
 docker run -p 8080:8080 --name <newContainerName> --link <containerName>:mongo -d <imageName>:1.0 //Creates another container
+---
+OR
+---
+docker-compose up //have to be executed from the folder location of the file 
+------------------------------
 docker logs <newContainerName>
 //Once Services are Hit for CRUD Operations
 docker exec -it <containerName> bash
