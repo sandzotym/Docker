@@ -38,3 +38,4 @@ docker exec -it <containerName> bash
   - use <DBName>
   - show collections
   - db.<collectionName>.find().pretty()
+docker rm -f <Container ID from docker ps> //Kills Container
