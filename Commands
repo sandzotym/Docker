@@ -1,5 +1,5 @@
 $docker -v
-$docker build -t <JarName>
+$docker build -t <JarName> .
 $docker image ls
 
 $docker run -p 9090:8080 <JarName/ImageName> 
@@ -25,4 +25,16 @@ docker run -it -p 8080:8080 <dockerID>/<imageName>
 //Dockerize Springboot & MongoDB
 docker pull mongo:latest
 docker images
+docker ps //shows Containers
 docker run -d -p 27017:27017 --name <containerName> <imageName i.e. mongo:latest>
+//after Maven Install once the JAR is built execute
+docker build -t <imageName>:1.0 .
+docker run -p 8080:8080 --name <newContainerName> --link <containerName>:mongo -d <imageName>:1.0 //Creates another container
+docker logs <newContainerName>
+//Once Services are Hit for CRUD Operations
+docker exec -it <containerName> bash
+  - mongo
+  - show dbs
+  - use <DBName>
+  - show collections
+  - db.<collectionName>.find().pretty()
