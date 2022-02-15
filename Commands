@@ -21,3 +21,8 @@ docker run --tty --publish 8080:8080 <imageName generated from above Command>
 mvn clean compile jib:build
 docker run -it -p 8080:8080 <dockerID>/<imageName>
 //if any changes are made, we can also go in IDE - Maven - Plugin - jib - jib:build (Right Click & Run Maven Build)
+
+//Dockerize Springboot & MongoDB
+docker pull mongo:latest
+docker images
+docker run -d -p 27017:27017 --name <containerName> <imageName i.e. mongo:latest>
