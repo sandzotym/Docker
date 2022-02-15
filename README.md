@@ -34,12 +34,9 @@ Advantages -
 - No Docker File
 - No Manual Bild & Push
 
-Check Pom Plugins & Terminal Commands for Execution
+Check POM Plugins & Terminal Commands for Execution
+
 Maven - Settings.xml 
-<servers>
-  <server>
-    <id>registry.hub.docker.com</id>
-    <username><dockerID></username>
-    <password><DockerHub Password></password>
-  </server>
-</servers>
+
+<img width="345" alt="Screenshot 2022-02-15 at 12 22 36 PM" src="https://user-images.githubusercontent.com/93154062/154008262-b003b950-e741-4d56-8947-af7d5e01c78a.png">
+
