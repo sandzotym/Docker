@@ -34,7 +34,8 @@ docker run -p 8080:8080 --name <newContainerName> --link <containerName>:mongo -
 ---
 OR
 ---
-docker-compose up //have to be executed from the folder location of the file 
+//write the docker-compose.yml, go to the folder location and execute
+docker-compose up 
 ------------------------------
 docker logs <newContainerName>
 //Once Services are Hit for CRUD Operations
