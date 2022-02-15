@@ -29,6 +29,7 @@
 * With Springboot 2.3.0 M1 version & above, it enables to create Docker Image from App itself using Cloud Native buildpacks. No Dockerfile is needed. Check terminal Commands for Execution.
 
 **Dockerization using Google JIB Library as a Container Tool** 
+
 Advantages -
 - No Docker Installation
 - No Docker File
