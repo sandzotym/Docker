@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>spring-boot-docker-jenkins-integration</artifactId>
+	<artifactId>spring-boot-mongodb-docker-integration</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>spring-boot-docker-jenkins-integration</name>
-	<description>Dockerize Spring boot App using Jenkins and Git</description>
+	<name>spring-boot-mongodb-docker-integration</name>
+	<description>Dockerize Springboot App and MongoDB</description>
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
@@ -21,28 +21,42 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-mongodb</artifactId>
+		</dependency>
+		<!-- to Auto Restart App if any Change is done -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-			<groupId>org.junit.jupiter</groupId>
-			<artifactId>junit-jupiter</artifactId>
-			<version>RELEASE</version>
-			<scope>test</scope>
-		</dependency>
 	</dependencies>
-
 	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<excludes>
+						<exclude>
+							<groupId>org.projectlombok</groupId>
+							<artifactId>lombok</artifactId>
+						</exclude>
+					</excludes>
+				</configuration>
 			</plugin>
 		</plugins>
-		<finalName>spring-boot-docker-jenkins-integration</finalName> <!-- JAR Name -->
+		<finalName>spring-boot-mongodb-docker-integration</finalName> <!-- JAR Name -->
 	</build>
 
 </project>
