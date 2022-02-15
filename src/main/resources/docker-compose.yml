@@ -1,0 +1,15 @@
+version: "3"
+services:
+  sandsotymmongodb:
+    image: mongo:latest
+    container_name: "sandsotymmongodb"
+    ports:
+      - 27017:27017
+  spring-boot-mongodb-docker-integrationss:
+    image:  spring-boot-mongodb-docker-integration:1.0
+    container_name:  spring-boot-mongodb-docker-integrationss
+    ports:
+      - 8080:8080
+    links:
+      - sandsotymmongodb
+
