@@ -16,3 +16,8 @@ $docker run -p 9090:8080 <DockerID>/<ImageName>
 //With Springboot 2.3.0 M1 version & above Option
 mvn spring-boot:build-image
 docker run --tty --publish 8080:8080 <imageName generated from above Command>
+
+//Using Google JIB Library as Container Tools
+mvn clean compile jib:build
+docker run -it -p 8080:8080 <dockerID>/<imageName>
+//if any changes are made, we can also go in IDE - Maven - Plugin - jib - jib:build (Right Click & Run Maven Build)
