@@ -1,0 +1,6 @@
+spring:
+  data:
+    mongodb:
+      database: Order
+      host: sandsotymmongodb
+      port: 27017
