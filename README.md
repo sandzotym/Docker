@@ -48,3 +48,16 @@ Maven - Settings.xml
 There are two ways to link the Containers among themselves -
 - D-Link which uses CLI
 - Docker-Compose that uses Config File
+
+**CICD Pipeline using Github Actions**
+
+There are many CICD Tools like Circle CI, Bamboo, Jenkins, GitLab, TeamCity, Travis CI
+
+<img width="1160" alt="Screenshot 2022-02-15 at 7 41 31 PM" src="https://user-images.githubusercontent.com/93154062/154078989-284e3132-f17e-478d-b77f-6ac112ea692c.png">
+
+All of these consume resources. Where Github provides same platform to reduce that overload.
+
+![image](https://user-images.githubusercontent.com/93154062/154079663-19e6fb24-e401-4be8-b950-ba6d734c7ad6.png)
+
+
+
